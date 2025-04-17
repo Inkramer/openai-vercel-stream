@@ -15,7 +15,7 @@ app.post("/chat", async (req, res) => {
     const messages = req.body.messages;
 
     const stream = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-4o",
       messages: messages,
       stream: true
     });
